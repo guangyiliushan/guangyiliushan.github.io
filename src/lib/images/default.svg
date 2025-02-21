@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="questionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#666666" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 白色背景圆 -->
+  <circle cx="50" cy="50" r="45" fill="white" stroke="none" />
+  
+  <!-- 问号上部曲线 -->
+  <path d="M 50 25,
+          C75 55, 75 40, 65 35
+          C35 65, 50 70, 65 60
+          C35 20, 25 35, 30 50
+          " 
+        fill="none" 
+        stroke="url(#questionGradient)" 
+        stroke-width="5"
+        stroke-linecap="round"/>
+  
+  <!-- 问号下部曲线 -->
+  <path d="M 50 75,
+          C75 45, 75 60, 65 65
+          C35 35, 50 30, 65 40
+          C35 80, 25 65, 30 50
+          " 
+        fill="none" 
+        stroke="url(#questionGradient)" 
+        stroke-width="5"
+        stroke-linecap="round"/>
+  
+  <!-- 问号上部直线 -->
+  <line x1="50" y1="25" x2="50" y2="35"
+        fill="none"
+        stroke="url(#questionGradient)"
+        stroke-width="5"
+        stroke-linecap="round"/>
+  
+  <!-- 问号中间点 -->
+  <circle cx="70" cy="50" r="5" fill="url(#questionGradient)" />
+</svg>
+
